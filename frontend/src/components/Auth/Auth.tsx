@@ -77,12 +77,18 @@ const Auth: React.FunctionComponent<IAuthProps> = ({
           </>
         ) : (
           <>
-            <Text fontSize="3xl">MessengerQL</Text>
+            <Text fontSize="3xl">Chat App</Text>
             <Button
               onClick={() => signIn("google")}
               leftIcon={<Image height="20px" src="/images/googlelogo.png" />}
             >
               Continue with Google
+            </Button>
+            <Button
+              onClick={() => signIn("github")}
+              leftIcon={<Image height="20px" src="/images/githublogo.png" />}
+            >
+              Continue with GitHub
             </Button>
           </>
         )}
